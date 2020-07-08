@@ -18,6 +18,8 @@ class _NewTransactionState extends State<NewTransaction> {
     final enteredTitle = titleController.text;
     final enteredAmount = double.parse(amountController.text);
 
+    print(enteredAmount);
+    print(enteredTitle);
     if(enteredTitle.isEmpty || enteredAmount <= 0 ) {
       return;
     }
