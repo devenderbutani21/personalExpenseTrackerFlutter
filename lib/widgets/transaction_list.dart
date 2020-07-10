@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -12,7 +11,7 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 300,
       child: transactions.isEmpty
           ? Column(
               children: <Widget>[
@@ -51,7 +50,6 @@ class TransactionList extends StatelessWidget {
                     ),
                     title: Text(
                       transactions[index].title,
-                      // ignore: deprecated_member_use
                       style: Theme.of(context).textTheme.title,
                     ),
                     subtitle: Text(
